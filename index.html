@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluento — Học tiếng Anh bằng flashcard</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark">
+            <svg
+              aria-hidden="true"
+              fill="none"
+              height="22"
+              viewBox="0 0 24 24"
+              width="22"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11a1 1 0 0 1 1 1v16a3 3 0 0 0-3-3H4V5.5Z"
+                stroke="currentColor"
+                stroke-linejoin="round"
+                stroke-width="1.8"
+              />
+              <path
+                d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13a1 1 0 0 0-1 1v16a3 3 0 0 1 3-3h5V5.5Z"
+                stroke="currentColor"
+                stroke-linejoin="round"
+                stroke-width="1.8"
+              />
+            </svg>
+          </div>
+
+          <span class="brand-name">Fluento</span>
+        </div>
+
+        <div class="header-actions">
+          <div class="streak-pill">
+            <span class="flame">
+              <svg
+                aria-hidden="true"
+                fill="none"
+                height="22"
+                viewBox="0 0 24 24"
+                width="22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.8 2.7c.5 3-1.7 4.2-1.7 6.3 0 1.1.8 1.8 1.8 1.8 1.6 0 2.4-1.5 2.1-3.1 2.3 1.7 3.6 4 3.6 6.6A6.6 6.6 0 0 1 12 21a6.6 6.6 0 0 1-6.6-6.7c0-3.7 2.4-6.9 7.4-11.6Z"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M9.5 16.7c0-1.2.7-2.3 2.4-3.7.1 1.3 1.2 1.8 1.2 2.8 0 .8-.4 1.2-1 1.2-.5 0-.9-.3-1-.8-.5.6-.6 1.2-.6 1.7"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.8"
+                />
+              </svg>
+            </span>
+
+            <span>
+              <strong>12 ngày</strong>
+              <small>Chuỗi học</small>
+            </span>
+          </div>
+
+          <button class="avatar" aria-label="Mở tài khoản">
+            <span>MN</span>
+            <span class="online-dot"></span>
+          </button>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="welcome">
+          <div>
+            <p class="eyebrow">THỨ TƯ, 24 THÁNG 4</p>
+            <h1>Chào buổi sáng, Khoa!</h1>
+            <p class="welcome-copy">
+              Mỗi từ mới là một bước gần hơn tới sự tự tin.
+            </p>
+          </div>
+
+          <div class="daily-progress">
+            <div class="progress-copy">
+              <span>Mục tiêu hôm nay</span>
+              <strong>7/10 từ</strong>
+            </div>
+
+            <div class="progress-track" aria-label="7 trên 10 từ">
+              <span style="width: 70%"></span>
+            </div>
+          </div>
+        </section>
+
+        <div class="dashboard-grid">
+          <section class="study-panel">
+            <div class="section-heading">
+              <div>
+                <span class="section-kicker">BÀI HỌC HÔM NAY</span>
+                <h2>Từ vựng giao tiếp</h2>
+              </div>
+
+              <span class="card-count">1 / 5</span>
+            </div>
+
+            <div
+              class="flashcard"
+              id="flashcard"
+              role="button"
+              tabindex="0"
+            >
+              <div class="flashcard-inner">
+                <div class="card-face card-front">
+                  <button
+                    class="sound-button"
+                    aria-label="Nghe phát âm từ Serendipity"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      fill="none"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      width="22"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 9v6h3l4 3V6L8 9H5Z"
+                        stroke="currentColor"
+                        stroke-linejoin="round"
+                        stroke-width="1.8"
+                      />
+                      <path
+                        d="M15.5 9.3a4 4 0 0 1 0 5.4M18 6.8a7.5 7.5 0 0 1 0 10.4"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-width="1.8"
+                      />
+                    </svg>
+                  </button>
+
+                  <span class="word-type">noun</span>
+                  <h3>Serendipity</h3>
+                  <p class="pronunciation">/ˌser.ənˈdɪp.ə.ti/</p>
+                  <span class="flip-hint">Nhấn để xem nghĩa</span>
+                </div>
+
+                <div class="card-face card-back">
+                  <span class="word-type">noun</span>
+                  <h3>Sự tình cờ may mắn</h3>
+
+                  <div class="example-box">
+                    <p>“Finding this little bookstore was pure serendipity.”</p>
+                    <span>
+                      Tìm thấy hiệu sách nhỏ này là một sự tình cờ may mắn.
+                    </span>
+                  </div>
+
+                  <span class="flip-hint">Nhấn để xem lại từ</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="study-actions">
+              <button class="nav-button" aria-label="Từ trước">
+                <svg
+                  aria-hidden="true"
+                  fill="none"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  width="20"
+                >
+                  <path
+                    d="m14 6-6 6 6 6"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+
+              <button class="answer-button review">
+                <span>Chưa nhớ</span>
+                <small>Ôn lại sau</small>
+              </button>
+
+              <button class="answer-button know">
+                <span>Đã nhớ</span>
+                <small>Tiếp tục</small>
+              </button>
+
+              <button class="nav-button" aria-label="Từ tiếp theo">
+                <svg
+                  aria-hidden="true"
+                  fill="none"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  width="20"
+                >
+                  <path
+                    d="m10 6 6 6-6 6"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <p class="feedback" aria-live="polite">Sẵn sàng</p>
+          </section>
+
+          <aside class="side-panel">
+            <section class="streak-card">
+              <div class="streak-card-top">
+                <div class="streak-icon">
+                  <svg
+                    aria-hidden="true"
+                    fill="none"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.8 2.7c.5 3-1.7 4.2-1.7 6.3 0 1.1.8 1.8 1.8 1.8 1.6 0 2.4-1.5 2.1-3.1 2.3 1.7 3.6 4 3.6 6.6A6.6 6.6 0 0 1 12 21a6.6 6.6 0 0 1-6.6-6.7c0-3.7 2.4-6.9 7.4-11.6Z"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.8"
+                    />
+                    <path
+                      d="M9.5 16.7c0-1.2.7-2.3 2.4-3.7.1 1.3 1.2 1.8 1.2 2.8 0 .8-.4 1.2-1 1.2-.5 0-.9-.3-1-.8-.5.6-.6 1.2-.6 1.7"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.8"
+                    />
+                  </svg>
+                </div>
+
+                <div>
+                  <span>Chuỗi hiện tại</span>
+                  <strong>12 ngày</strong>
+                </div>
+              </div>
+
+              <p>Bạn đang duy trì phong độ rất tốt!</p>
+
+              <div class="week-row">
+                <div class="day-item">
+                  <span>T2</span>
+                  <strong class="active">✓</strong>
+                </div>
+                <div class="day-item">
+                  <span>T3</span>
+                  <strong class="active">✓</strong>
+                </div>
+                <div class="day-item">
+                  <span>T4</span>
+                  <strong class="active">24</strong>
+                </div>
+                <div class="day-item">
+                  <span>T5</span>
+                  <strong>25</strong>
+                </div>
+                <div class="day-item">
+                  <span>T6</span>
+                  <strong>26</strong>
+                </div>
+                <div class="day-item">
+                  <span>T7</span>
+                  <strong>27</strong>
+                </div>
+                <div class="day-item">
+                  <span>CN</span>
+                  <strong>28</strong>
+                </div>
+              </div>
+            </section>
+
+            <section class="stat-card">
+              <div class="stat-heading">
+                <h2>Tiến độ tuần này</h2>
+                <span>+18%</span>
+              </div>
+
+              <div
+                class="chart"
+                aria-label="Biểu đồ thời gian học trong tuần"
+              >
+                <div class="chart-column">
+                  <div class="bar-track">
+                    <span style="height: 36%"></span>
+                  </div>
+                  <small>T2</small>
+                </div>
+
+                <div class="chart-column">
+                  <div class="bar-track">
+                    <span style="height: 52%"></span>
+                  </div>
+                  <small>T3</small>
+                </div>
+
+                <div class="chart-column">
+                  <div class="bar-track">
+                    <span style="height: 44%"></span>
+                  </div>
+                  <small>T4</small>
+                </div>
+
+                <div class="chart-column">
+                  <div class="bar-track">
+                    <span style="height: 76%"></span>
+                  </div>
+                  <small>T5</small>
+                </div>
+
+                <div class="chart-column">
+                  <div class="bar-track">
+                    <span style="height: 62%"></span>
+                  </div>
+                  <small>T6</small>
+                </div>
+
+                <div class="chart-column">
+                  <div class="bar-track">
+                    <span class="highlight" style="height: 88%"></span>
+                  </div>
+                  <small>T7</small>
+                </div>
+
+                <div class="chart-column">
+                  <div class="bar-track">
+                    <span style="height: 68%"></span>
+                  </div>
+                  <small>CN</small>
+                </div>
+              </div>
+
+              <div class="weekly-total">
+                <span>Thời gian học</span>
+                <strong>3 giờ 24 phút</strong>
+              </div>
+            </section>
+
+            <section class="tip-card">
+              <div class="tip-number">01</div>
+
+              <div>
+                <span>MẸO HỌC NHANH</span>
+                <p>Đọc to từ mới 3 lần để ghi nhớ lâu hơn.</p>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
